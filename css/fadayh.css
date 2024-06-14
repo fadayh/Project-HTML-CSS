@@ -1,0 +1,489 @@
+:root{
+  --primaryColor: rgb(177, 57, 177);
+  --secondarColor : rgb(174, 48, 102) ;
+  --lightColor : rgb(19, 11, 16) ;
+  --bgColor-1 :rgb(244, 239, 239) ;
+  --bgColor-2 :rgb(245, 239, 239);
+  --padding : 9% ;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html{
+    font-family: 'Roboto Slab', serif;
+    font-size: 16px;
+    color: var(--lightColor) ;
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+
+h1{
+    
+font-size: 1.65rem;
+margin: 1.7rem 0;
+margin-top: 8rem;
+
+}
+
+h2{
+    font-size: 2rem;
+    letter-spacing: 0.12rem;
+    cursor: pointer;
+}
+
+h3{
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem; 
+}
+h4{
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+h5{
+    color: rgb(29, 131, 143);
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+    
+}
+h6{
+    color: rgb(104, 26, 85);
+    font-size: 1.5rem;
+    letter-spacing: 2px; 
+    
+}
+p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 1.5rem;
+    font-size: 1rem;
+}
+span{
+    color: var(--primaryColor)
+}
+
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.nav {
+    background-color: rgb(241, 218, 238);
+    border: 1px solid rgb(2, 11, 6);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 18px 100px;
+ }
+
+ header ul {
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+header ul li{
+    position: relative;
+    list-style: none;
+
+}
+
+header ul li a {
+    color: var(--lightColor);
+    text-decoration: none;
+    text-transform: capitalize;
+    transition: 0.4s;
+
+ font-size: 20px;
+ position: relative;
+ margin: 0 20px;
+ text-decoration: none;
+ letter-spacing: 2px;
+ font-weight: 500px;
+ 
+ transition: 0.3s ;
+
+}
+ /*/header ul li .active{
+    color:var(--primaryColor) ;
+}*/
+
+header ul li a:hover {
+    color : var(--primaryColor);
+}
+
+
+a::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 0;
+    background-color: var(--primaryColor);
+    bottom: -7px;
+
+    transition: 0.3s ;
+    -webkit-transition:0.3s ;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition:0.3s ;
+
+}
+
+a :hover{
+    color: #000;
+}
+a:hover::before{
+    width: 100%;
+}
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.home {
+    
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bgColor-1);
+    display: flex;
+    flex-direction: column;
+}
+
+.btn2 {
+    
+    background-color: rgb(56, 167, 180);
+    color: var(--lightColor);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border: 2px solid transparent;
+    border-radius:30px ;
+    transition : 0.4s;
+}
+
+.btn2:hover{
+background-color: transparent;
+border: 2px solid rgb(57, 174, 187);
+}
+
+.contant {
+   
+    flex-grow: 1;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.contant-text1 {
+    
+    padding: relative ;
+    bottom: 70px;
+}
+.contant-image1 {
+    
+    width: 45%;
+    height: 90%;
+    position: relative;
+    align-self:flex-end ;
+
+}
+.contant-image1 img{
+    position: absolute;
+    bottom: 0;
+    height: 450%;
+    left: 50%;
+    transform :translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+.contant-image1:hover .fd{
+    bottom: 40px;
+
+
+}
+.contant-image1:hover .pic{
+    left: 45%;
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.About{
+    background-color: rgb(226, 219, 228);
+    padding: 12rem 1%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contant-image2 {
+    width:35% ;
+
+}
+.contant-image2 img {
+    width: 105%;
+    
+}
+.contant-texts2{
+    
+    width: 50%;
+    text-align: center;
+    
+}
+
+/*///////////////////////////////////////////////////////////////////*/
+
+.Type {
+    background-color: var(--bgColor-1);
+    padding: 6rem 1%;
+   
+
+}
+.text-center{
+    text-align: center;
+    padding-bottom: 2rem;
+
+}
+.box{
+  
+  
+    display: flex;
+    justify-content: center;
+
+}
+.card { 
+    background-color:rgb(226, 162, 229) ;
+    width: 270px;
+   
+    margin: 10px;
+border-radius: 15px;
+
+    
+    border: 1px solid rgb(2, 11, 6);
+
+}
+.card-image{
+background-color: rgb(249, 251, 251);
+height:250px ;
+margin-bottom:15px ;
+background-size: cover;
+border-radius: 15px 15px 0 0;
+
+
+}
+.fad1{
+    background-image: url('../icon/a.png');
+   
+}
+
+.fad2{
+    background-image: url('../icon/j.png');
+   
+}
+.fad3{
+    background-image: url('../icon/d.png');
+   
+}
+.fad4{
+    background-image: url('../icon/m.png');
+   
+}
+.fad5{
+    background-image: url('../icon/h.png');
+   
+}
+
+
+.card h2 {
+ padding: 10px;
+}
+ 
+.card p{
+padding: 10px;
+}
+
+.card a{
+    background-color: rgb(188, 111, 185);
+    color: rgb(27, 23, 26);
+    padding: 15px 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+  
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius:30px ;
+    transition : 0.4s;
+}
+.card a:hover{
+    background-color: transparent;
+    border: 2px solid rgb(188, 111, 185);
+}
+.card:hover{
+    background-color: rgb(243, 230, 240);
+    color: rgb(246, 237, 237);
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 0.1s ease;
+}
+
+
+/*///////////////////////////////////////////////////////////////////*/
+
+
+.Evaluation{
+    padding: 6rem 1%;
+    background-color: rgb(226, 219, 228);
+    outline: none;
+    text-transform:capitalize;
+    transition: all .2s linear;
+
+}
+
+
+.gh{
+    min-height: 55vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+
+.btnn {
+    
+background-color: rgb(188, 111, 185);
+color:var(--lightColor);
+box-shadow: 0 4px 10px;
+border: 2px solid transparent;
+border-radius:30px ;
+cursor: pointer;
+
+}
+
+.btnn:hover{
+    background:rgb(168, 104, 197) ;
+}
+
+.btnn:active{
+    transform: scale(.90);
+}
+
+#button{
+    font-weight: bold;
+    padding: 0.81rem 1.87rem;
+    border: 2px solid transparent;
+    border-radius:30px ;
+
+}
+.pop-gh{
+    position: fixed;
+    top: -120%; left: 0;
+    z-index: 1000;
+    background: rgb(241, 218, 238);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.gh .toggle {
+
+    top:0%;
+}
+.pop-gh .pop{
+    background: rgb(233, 231, 227);
+    text-align: center;
+    margin:10px ;
+    padding: 10px ;
+    box-shadow: 0 5px 10px black;
+    border-radius: 5px;
+    position: relative;
+
+}
+.pop-gh .pop h3{
+    color: rgb(99, 48, 126);
+    padding: 20px 40px;
+    font-size: 25px;
+}
+.pop-gh .pop .sub{
+
+    margin: 30px;
+    font-size: 20px;
+    height: 40px;
+    width: 150px;
+    box-shadow: 0 5px 10px;
+   border: 2px solid transparent;
+   border-radius:30px ;
+   cursor: pointer;
+    background-color: rgb(188, 111, 185);
+   color: var(--lightColor);
+}
+.pop-gh .pop .sub:hover{
+    background: rgb(168, 104, 197);
+}
+
+.pop-gh .pop input[type="radio"]{
+    display: none;
+
+}
+.pop-gh .pop .cvc{
+    padding: 10px;
+}
+ .pop-gh .pop .cvc label{
+    font-size: 40px;
+    cursor: pointer;
+    opacity: .4;
+ }
+ .pop-gh .pop .cvc:hover label{
+    opacity: .2;
+ }
+
+.pop-gh .pop #b1:checked~.cvc label:nth-child(1),
+.pop-gh .pop #b2:checked~.cvc label:nth-child(2),
+.pop-gh .pop #b3:checked~.cvc label:nth-child(3),
+.pop-gh .pop #b4:checked~.cvc label:nth-child(4),
+.pop-gh .pop #b5:checked~.cvc label:nth-child(5),
+
+
+.pop-gh .pop .cvc label:hover{
+    opacity: 1;
+    font-size: 60px;
+ }
+ 
+ .pop-gh .pop #close{
+    position: absolute;
+    top: -15px; right: -15px;
+    border-radius: 50%;
+    border: 4px solid rgb(237, 169, 203);
+    height: 40px;
+    width: 40px;
+    line-height: 35px;
+    cursor: pointer;
+    background: rgb(242, 238, 240);
+    color: rgb(235, 8, 148);
+    font-size: 20px;
+ }
+
+ .pop-gh .pop #close:hover{
+    transform: rotate(90deg);
+ }
+
+ /*///////////////////////////////////////////////////////////////////*/
+
+ 
+ 
+
+ 
